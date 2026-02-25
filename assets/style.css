@@ -79,18 +79,17 @@ ul {
 
 .icons {
   display: flex;
-  gap: 14px;
-  margin-top: 10px;
+  gap: 16px;
+  margin-top: 12px;
 }
 
 .icons a {
-  font-size: 1.1rem;
-  text-decoration: none;
-  opacity: 0.75;
+  color: var(--muted);
+  font-size: 1.25rem;
 }
 
 .icons a:hover {
-  opacity: 1;
+  color: var(--accent);
 }
 
 /* Adding options for the profile pic */
