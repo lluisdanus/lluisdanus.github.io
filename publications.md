@@ -16,7 +16,7 @@ layout: default
   {{ pub.authors | replace: "Your Name", "<span class='author'>Your Name</span>" }}  
   <br>
   <em>{{ pub.journal }}</em> ({{ pub.year }}) -
-  Cited by: {{ site.data.citations[pub.id] }}
+  Cited by: {{ site.data.citations[pub.id] }} {{pub.id}}
 </div>
 
 </div>
