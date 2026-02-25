@@ -2,6 +2,10 @@ import bibtexparser
 from scholarly import scholarly
 import yaml
 from pathlib import Path
+import latexcodec
+
+def latex_to_unicode(s):
+    return s.encode("utf-8").decode("latex")
 
 bibfile = Path("assets/publications.bib")
 out_pubs = Path("_data/publications.yml")
@@ -15,13 +19,13 @@ citations = {}
 
 for entry in bib_database.entries:
     key = entry["ID"]
-    title = entry.get("title", "").strip("{}")
-    authors = entry.get("author", "")
-    journal = entry.get("journal", "")
+
+    title = latex_to_unicode(entry.get("title", "").strip("{}"))
+    authors = latex_to_unicode(entry.get("author", ""))
+    journal = latex_to_unicode(entry.get("journal", ""))
     year = entry.get("year", "")
     doi = entry.get("doi", "")
 
-    # Scholar search
     try:
         search = scholarly.search_pubs(title)
         pub = next(search)
@@ -39,5 +43,9 @@ for entry in bib_database.entries:
         "doi": doi,
     })
 
-out_pubs.write_text(yaml.dump(publications, sort_keys=False))
-out_cits.write_text(yaml.dump(citations, sort_keys=False))
+out_pubs.write_text(
+    yaml.dump(publications, sort_keys=False, allow_unicode=True)
+)
+out_cits.write_text(
+    yaml.dump(citations, sort_keys=False)
+)
