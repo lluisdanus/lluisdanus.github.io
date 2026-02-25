@@ -75,6 +75,24 @@ ul {
   font-size: 0.9rem;
 }
 
+/* Adding icon style */
+
+.icons {
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.icons a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+.icons a:hover {
+  opacity: 1;
+}
+
 /* Adding options for the profile pic */
 
 .profile {
@@ -99,9 +117,14 @@ ul {
 
 /* Adding style for publications */
 
+.publication {
+  margin-bottom: 1.6rem;
+}
+
 .pub-title {
-  font-size: 1.05rem;
-  font-weight: 500;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
 }
 
 .pub-title a {
@@ -111,6 +134,11 @@ ul {
 
 .pub-title a:hover {
   text-decoration: underline;
+}
+
+.pub-meta {
+  font-size: 0.95rem;
+  color: var(--muted);
 }
 
 .author {
