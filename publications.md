@@ -3,78 +3,19 @@ title: Publications
 layout: default
 ---
 
-## Journal articles
-
+{% for pub in site.data.publications %}
 <div class="publication">
-	<div class="pub-title">
-	  <a href="https://doi.org/10.xxxx/xxxxx">
-	    Human mobility is well described by closed-form gravity-like models learned automatically from data
-	  </a>
-	</div>
 
-	<div class="pub-meta">
-	  Oriol Cabanas-Tirapu, <span class="author">Lluís Danús</span>, Esteban Moro, Marta Sales-Pardo, Roger Guimerà 
-	  <br>
-	  <em>Nature Communications 16 (1), 1336</em> (2025) <span class="citations" data-scholar="paper_id_1">–</span> Cited by 
-	</div>
-</div>
-  
-  
-<div class="publication">
-	<div class="pub-title">
-	  <a href="https://doi.org/10.xxxx/xxxxx">
-	    Differences in collaboration structures and impact among prominent researchers in Europe and North America
-	  </a>
-	</div>
-
-	<div class="pub-meta">
-	  <span class="author">Lluís Danús</span>, Carles Muntaner, Alex Krauss, Marta Sales-Pardo, Roger Guimerà
-	  <br>
-	  <em>EPJ Data Science 12 (1) 12</em> (2023) · <span class="citations" data-scholar="paper_id_1">–</span> Cited by 
-	</div>
+<div class="pub-title">
+  <a href="https://doi.org/{{ pub.doi }}">{{ pub.title }}</a>
 </div>
 
-<div class="publication">
-	<div class="pub-title">
-	  <a href="https://doi.org/10.xxxx/xxxxx">
-	    Early-career factors largely determine the future impact of prominent researchers: evidence across eight scientific fields
-	  </a>
-	</div>
-
-	<div class="pub-meta">
-	  Alex Krauss, <span class="author">Lluís Danús</span>, Marta Sales-Pardo 
-	  <br>
-	  <em>Scientific Reports 13 (1) 18794</em> (2023) <span class="citations" data-scholar="paper_id_1">–</span> Cited by 
-	</div>
-</div>
-  
-  
-## Under review
-
-<div class="publication">
-	<div class="pub-title">
-	  <a href="https://doi.org/10.xxxx/xxxxx">
-	    Informal Connections Outweigh Co-authorship Ties in Academic Impact
-	  </a>
-	</div>
-
-	<div class="pub-meta">
-	  <span class="author">Lluís Danús</span>, William Dineenn, Carolina Torreblanca, Guy Grossman, Sandra González-Bailón
-	  <br>
-	  <em>*R&R PNAS*</em> (2026) <span class="citations" data-scholar="paper_id_1">–</span> Cited by 
-	</div>
+<div class="pub-meta">
+  {{ pub.authors | replace: "Your Name", "<span class='author'>Your Name</span>" }}  
+  <br>
+  <em>{{ pub.journal }}</em> ({{ pub.year }}) ·
+  {{ site.data.citations[pub.id] }} citations
 </div>
 
-<div class="publication">
-	<div class="pub-title">
-	  <a href="https://doi.org/10.xxxx/xxxxx">
-	    Gender and the influence of research environment in topic selection of early-career faculty in STEM
-	  </a>
-	</div>
-
-	<div class="pub-meta">
-	  <span class="author">Lluís Danús</span>, , Robert H. Davis, Roger Guimerà, Marta Sales-Pardo
-	  <br>
-	  <em>R&R EPJ Data Science</em> (2026) · <span class="citations" data-scholar="paper_id_1">–</span> Cited by 
-	</div>
 </div>
+{% endfor %}
