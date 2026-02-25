@@ -3,9 +3,15 @@ from scholarly import scholarly
 import yaml
 from pathlib import Path
 import latexcodec
+import re 
 
 def latex_to_unicode(s):
-    return s.encode("utf-8").decode("latex")
+    if not s:
+        return s
+    s = s.encode("utf-8").decode("latex")
+    # remove leftover braces around single characters
+    s = re.sub(r"\{([^{}])\}", r"\1", s)
+    return s
 
 bibfile = Path("assets/publications.bib")
 out_pubs = Path("_data/publications.yml")

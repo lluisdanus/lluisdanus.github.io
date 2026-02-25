@@ -3,21 +3,24 @@ title: Publications
 layout: default
 ---
 
+## Peer-reviewed publications
+
 {% for pub in site.data.publications %}
-<div class="publication">
+  <div class="publication">
+    <div class="pub-title">{{ pub.title }}</div>
 
-<div class="pub-title">
-  <a href="https://doi.org/{{ pub.doi }}">{{ pub.title }}</a>
-</div>
+    <div class="pub-authors">
+      {{ pub.authors }}
+    </div>
 
-<div class="pub-meta">
-  {{ pub.authors | replace: "Your Name", "<span class='author'>Your Name</span>" }}  
-  <br>
-  <em>{{ pub.journal }}</em> ({{ pub.year }}) ·
-  {{ site.data.citations[pub.id] }} citations
-</div>
-
-</div>
+    <div class="pub-meta">
+      {{ pub.journal }} ({{ pub.year }})
+      {% assign c = site.data.citations[pub.id] %}
+      {% if c %}
+        · {{ c }} citations
+      {% endif %}
+    </div>
+  </div>
 {% endfor %}
 
 ## Manuscripts under review
