@@ -5,8 +5,10 @@ layout: default
 
 ## Journal articles
 
-- **Human mobility is well described by closed-form gravity-like models learned automatically from data**. 
-  Oriol Cabanas-Tirapu, **Lluís Danús**, Esteban Moro, Marta Sales-Pardo, Roger Guimerà (2025).  
+- <span class="pub-title">
+	**Human mobility is well described by closed-form gravity-like models learned automatically from data**. 
+  </span>
+  Oriol Cabanas-Tirapu, <span class="author">**Lluís Danús**</span>, Esteban Moro, Marta Sales-Pardo, Roger Guimerà (2025).  
   *Nature Communications 16 (1), 1336*.
   
 - **Differences in collaboration structures and impact among prominent researchers in Europe and North America**. 

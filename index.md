@@ -3,11 +3,18 @@ title: About
 layout: default
 ---
 
+<div class="profile">
+  <img src="/assets/profile_picture.png" alt="Profile photo">
+  <div>
+  
 ## About
 
 !Bones!
 
 I am a postdoctoral researcher in Computational Social Science at the Center for Information Networks and Democracy (CIND) in the University of Pennsylvania. My research nowadays is centered on how
+
+  </div>
+</div>
 
 ---
 
