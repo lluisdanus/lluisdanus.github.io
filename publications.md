@@ -34,7 +34,7 @@ layout: default
 	<div class="pub-meta">
 	  <span class="author">Lluís Danús</span>, William Dineenn, Carolina Torreblanca, Guy Grossman, Sandra González-Bailón
 	  <br>
-	  <em>*R&R PNAS*</em> (2026) <span class="citations" data-scholar="paper_id_1">–</span> Cited by 
+	  <em>*R&R PNAS*</em> (2026) <span class="citations" data-scholar="paper_id_1">–</span>
 	</div>
 </div>
 
@@ -48,6 +48,6 @@ layout: default
 	<div class="pub-meta">
 	  <span class="author">Lluís Danús</span>, Robert H. Davis, Roger Guimerà, Marta Sales-Pardo
 	  <br>
-	  <em>R&R EPJ Data Science</em> (2026) <span class="citations" data-scholar="paper_id_1">–</span> Cited by 
+	  <em>R&R EPJ Data Science</em> (2026) <span class="citations" data-scholar="paper_id_1">–</span> 
 	</div>
 </div>
