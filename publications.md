@@ -13,10 +13,14 @@ layout: default
 </div>
 
 <div class="pub-meta">
-  {{ pub.authors | replace: "Your Name", "<span class='author'>Your Name</span>" }}  
+  {{ pub.authors | replace: "Danús, Lluís", "<span class='author'>Danús, Lluís</span>" }}  
   <br>
   <em>{{ pub.journal }}</em> ({{ pub.year }}) -
-  Cited by: {{ site.data.citations[pub.id] }} {{pub.id}}
+  {% assign cid = pub.id | strip %}
+	{% assign c = site.data.citations[cid] %}
+	{% if c %}
+	  – Cited by: {{ c }}
+	{% endif %}
 </div>
 
 </div>
