@@ -6,8 +6,6 @@ layout: default
 <div class="profile">
   <img src="/assets/profile_picture.png" alt="Profile photo">
   <div>
-  
-## About
 
 !Bones!
 
