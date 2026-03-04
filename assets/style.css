@@ -426,8 +426,8 @@ ul {
   margin-bottom: 1rem;
 }
 
-.page-content .research-section .research-text h2 {
-  color: #1f4ed8;
+.research-title {
+  color: #1f4ed8; /* same blue as your name in publications */
 }
 
 .research-image {

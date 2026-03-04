@@ -13,7 +13,7 @@ As a Computational Social Scientist trained in physics, I apply mathematical and
 <div class="research-section reverse">
 
   <div class="research-text">
-    <h2>Science of Science</h2>
+    <h2 class="research-title">Science of Science</h2>
     <p> Science is increasingly a collective endeavor. Researchers collaborate to reach intellectual shores that would be inaccessible in isolation. Yet, despite the idealized image of science as a purely rational enterprise, scholars are also social beings, and collaboration patterns are deeply shaped by social norms, institutional structures, and historical inequalities.
     </p>
 
