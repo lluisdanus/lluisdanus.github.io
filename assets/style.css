@@ -288,3 +288,87 @@ ul {
     margin-right: 15px;
   }
 }
+
+/* About page container */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Profile Photo */
+.about-photo img {
+  width: 200px; 
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #1f4ed8;
+}
+
+/* Bio */
+.about-bio {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Name */
+.about-bio h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* Paragraph */
+.about-bio p {
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Social links */
+.social-links a {
+  display: inline-block;
+  margin-right: 12px;
+  transition: transform 0.2s;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+.social-links img.social-icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* Dashboard teasers */
+.dashboard-section {
+  margin-top: 40px;
+}
+
+.dashboard-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #1f4ed8;
+}
+
+.publication-teaser, .news-teaser {
+  margin-bottom: 12px;
+}
+
+.see-all {
+  display: inline-block;
+  margin-top: 5px;
+  color: #1f4ed8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.see-all:hover {
+  text-decoration: underline;
+}
