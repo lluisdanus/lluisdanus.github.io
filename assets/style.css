@@ -293,18 +293,36 @@ ul {
 .about-container {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   gap: 30px;
   margin-top: 40px;
 }
 
 /* Profile Photo */
 .about-photo img {
-  width: 200px; 
-  height: 200px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #1f4ed8;
+  border-radius: 10px;  /* square with rounded edges */
+}
+
+/* Social links below photo */
+.about-photo .social-links {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Social icon size */
+.social-links img.social-icon {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s;
+}
+
+.social-links img.social-icon:hover {
+  transform: scale(1.2);
 }
 
 /* Bio */
@@ -313,40 +331,21 @@ ul {
   min-width: 250px;
 }
 
-/* Name */
 .about-bio h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 10px;
   color: #111;
 }
 
-/* Paragraph */
 .about-bio p {
   font-size: 1rem;
   line-height: 1.55;
   color: #444;
-  margin-bottom: 15px;
 }
 
-/* Social links */
-.social-links a {
-  display: inline-block;
-  margin-right: 12px;
-  transition: transform 0.2s;
-}
-
-.social-links a:hover {
-  transform: scale(1.2);
-}
-
-.social-links img.social-icon {
-  width: 32px;
-  height: 32px;
-}
-
-/* Dashboard teasers */
+/* News Dashboard */
 .dashboard-section {
   margin-top: 40px;
 }
@@ -357,7 +356,7 @@ ul {
   color: #1f4ed8;
 }
 
-.publication-teaser, .news-teaser {
+.news-teaser {
   margin-bottom: 12px;
 }
 

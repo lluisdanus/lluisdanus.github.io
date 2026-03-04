@@ -3,22 +3,13 @@ layout: default
 title: Lluís Danús
 ---
 
-<!-- About Container -->
 <div class="about-container">
 
   <!-- Profile Photo -->
   <div class="about-photo">
-    <img src="{{ '/assets/profile_picture.png' | relative_url }}" alt="Lluís Danús">
-  </div>
-
-  <!-- Bio and Social Links -->
-  <div class="about-bio">
-    <h1>Lluís Danús</h1>
-    <p>
-      Postdoctoral researcher focused on social networks, human mobility, and data science.
-    </p>
-
-    <!-- Social Links -->
+    <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Lluís Danús">
+    
+    <!-- Social Links below photo -->
     <div class="social-links">
       <a href="https://github.com/yourusername" target="_blank" title="GitHub">
         <img src="{{ '/assets/icons/github.svg' | relative_url }}" alt="GitHub" class="social-icon">
@@ -34,9 +25,17 @@ title: Lluís Danús
       </a>
     </div>
   </div>
+
+  <!-- Bio -->
+  <div class="about-bio">
+    <h1>Lluís Danús</h1>
+    <p>
+      Postdoctoral researcher focused on social networks, human mobility, and data science.
+    </p>
+  </div>
 </div>
 
-<!-- Mini Dashboard: News Teaser -->
+<!-- News Dashboard -->
 <div class="dashboard-section">
   <h2>News</h2>
   {% for item in site.data.news limit:3 %}
