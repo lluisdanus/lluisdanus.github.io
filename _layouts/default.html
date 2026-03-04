@@ -21,32 +21,17 @@
 <body>
 
 <header class="site-header">
-  <div class="header-inner">
-    <h1>{{ site.title }}</h1>
-    <p class="subtitle">
-	  Postdoctoral Researcher · University of Pennsylvania
-	</p>
-	
-<div class="icons">
-  <a href="https://scholar.google.com/citations?user=DYeubX0AAAAJ&hl=ca" aria-label="Google Scholar">
-    <i class="fa-solid fa-graduation-cap"></i>
-  </a>
-  <a href="https://github.com/lluisdanus" aria-label="GitHub">
-    <i class="fa-brands fa-github"></i>
-  </a>
-  <a href="https://www.linkedin.com/in/lluisdanus/" aria-label="LinkedIn">
-    <i class="fa-brands fa-linkedin"></i>
-  </a>
-  <a href="mailto:lluis.danus@asc.upenn.edu" title="Email">
-    ✉️
-  </a>
-</div>
+  <div class="container">
+    <div class="site-name">
+      <a href="{{ '/' | relative_url }}">Lluís Danús</a>
+    </div>
 
-    <nav>
-      <a href="/">About</a>
-      <a href="/research">Research</a>
-      <a href="/publications">Publications</a>
-      <a href="/cv">CV</a>
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">About</a>
+      <a href="{{ '/research' | relative_url }}" class="{% if page.url contains '/research' %}active{% endif %}">Research</a>
+      <a href="{{ '/publications' | relative_url }}" class="{% if page.url contains '/publications' %}active{% endif %}">Publications</a>
+      <a href="{{ '/cv' | relative_url }}" class="{% if page.url contains '/cv' %}active{% endif %}">CV</a>
+      <a href="{{ '/news' | relative_url }}" class="{% if page.url contains '/news' %}active{% endif %}">News</a>
     </nav>
   </div>
 </header>
