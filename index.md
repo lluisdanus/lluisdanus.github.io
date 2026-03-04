@@ -88,7 +88,7 @@ title: Lluís Danús
             <td>
               <strong>
                 {% if item.url %}
-                  <a href="{{ item.url | relative_url }}" target="_blank">{{ item.title }}</a>
+                  <a href="{{ item.url }}" target="_blank">{{ item.title }}</a>
                 {% else %}
                   {{ item.title }}
                 {% endif %}
