@@ -293,7 +293,7 @@ ul {
 .about-container {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  align-items: center;
   gap: 3rem;
 }
 
