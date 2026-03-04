@@ -292,10 +292,8 @@ ul {
 /* About page container */
 .about-container {
   display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
+  flex-direction:column;
   gap: 2rem;
-  margin-top: 40px;
 }
 
 
@@ -306,10 +304,10 @@ ul {
 }
 
 .about-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;      /* prevents distortion */
-  border-radius: 20px;    /* rounded edges */
+  width: 250px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 /* Social links below photo */
