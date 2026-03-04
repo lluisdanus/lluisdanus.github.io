@@ -17,7 +17,7 @@ title: Lluís Danús
       <a href="https://www.linkedin.com/in/lluisdanus/" target="_blank" title="LinkedIn">
         <img src="{{ '/assets/icons/linkedin.svg' | relative_url }}" alt="LinkedIn" class="social-icon">
       </a>
-      <a href="https://blueskyweb.xyz/lluisdanus.bsky.social" target="_blank" title="BlueSky">
+      <a href="https://bsky.app/profile/lluisdanus.bsky.social" target="_blank" title="BlueSky">
         <img src="{{ '/assets/icons/bluesky.svg' | relative_url }}" alt="BlueSky" class="social-icon">
       </a>
       <a href="https://scholar.google.com/citations?user=DYeubX0AAAAJ&hl=ca" target="_blank" title="Google Scholar">
