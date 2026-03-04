@@ -145,3 +145,37 @@ ul {
   color: var(--accent);
   font-weight: 600;
 }
+
+/* Adding style for abstract */
+
+.abstract-block {
+  margin-top: 8px;
+}
+
+.abstract-block summary {
+  font-size: 0.85rem;
+  color: #1f4ed8;
+  cursor: pointer;
+  font-weight: 500;
+  list-style: none;
+}
+
+.abstract-block summary::-webkit-details-marker {
+  display: none;
+}
+
+.abstract-block summary::before {
+  content: "▶ ";
+  font-size: 0.75rem;
+}
+
+.abstract-block[open] summary::before {
+  content: "▼ ";
+}
+
+.abstract-text {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+}

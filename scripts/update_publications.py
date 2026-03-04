@@ -31,6 +31,7 @@ for entry in bib_database.entries:
     journal = latex_to_unicode(entry.get("journal", ""))
     year = entry.get("year", "")
     doi = entry.get("doi", "")
+    abstract = latex_to_unicode(entry.get("abstract", ""))
 
     try:
         search = scholarly.search_pubs(title)
@@ -47,6 +48,7 @@ for entry in bib_database.entries:
         "journal": journal,
         "year": year,
         "doi": doi,
+        "abstract": abstract,
     })
 
 out_pubs.write_text(

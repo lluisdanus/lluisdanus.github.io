@@ -59,5 +59,16 @@
   © {{ site.time | date: "%Y" }} {{ site.title }}
 </footer>
 
+<script>
+function toggleAbstract(id) {
+  var el = document.getElementById("abs-" + id);
+  if (el.style.display === "block") {
+    el.style.display = "none";
+  } else {
+    el.style.display = "block";
+  }
+}
+</script>
+
 </body>
 </html>

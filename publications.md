@@ -19,6 +19,15 @@ layout: default
   Cited by: {{ site.data.citations[pub.id] }}
 </div>
 
+{% if pub.abstract %}
+  <details class="abstract-block">
+    <summary>Abstract</summary>
+    <div class="abstract-text">
+      {{ pub.abstract }}
+    </div>
+  </details>
+{% endif %}
+
 </div>
 {% endfor %}
 
