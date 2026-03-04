@@ -61,3 +61,19 @@ title: Lluís Danús
     </a>
   {% endfor %}
 </div>
+
+<!-- Upcoming Events Section -->
+<div class="events-section">
+  <h2>Upcoming Events</h2>
+  <div class="events-table">
+    {% for event in site.data.events %}
+      <div class="event-row">
+        <div class="event-date">{{ event.date | date: "%b %d, %Y" }}</div>
+        <div class="event-desc">
+          <a href="{{ event.url }}" target="_blank">{{ event.title }}</a>
+          {% if event.location %} — {{ event.location }}{% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
