@@ -13,6 +13,7 @@ title: Lluís Danús
     Computational Social Science
     Network Science | Complex Systems
     AI research
+    </p>
     <!-- Social Links -->
     <div class="social-links">
       <a href="https://github.com/lluisdanus" target="_blank" title="GitHub">
