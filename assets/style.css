@@ -120,7 +120,7 @@ ul {
 .publication {
   margin-bottom: 1.6rem;
 }
-
+/*
 .pub-title {
   font-size: 1.15rem;
   font-weight: 600;
@@ -134,22 +134,49 @@ ul {
 
 .pub-title a:hover {
   text-decoration: underline;
+}*/
+
+.publication {
+  margin-bottom: 28px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.pub-title a {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #111;
+  text-decoration: none;
+}
+
+.pub-title a:hover {
+  color: #1f4ed8;
+}
+
+.pub-meta .citations {
+  color: #777;
 }
 
 .pub-meta {
   font-size: 0.95rem;
-  color: var(--muted);
+  color: #555;
+  margin-top: 4px;
+}
+
+.pub-meta em {
+  font-style: italic;
+  color: #333;
 }
 
 .author {
-  color: var(--accent);
+  color: #1f4ed8;
   font-weight: 600;
 }
 
 /* Adding style for abstract */
 
 .abstract-block {
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .abstract-block summary {
@@ -174,8 +201,8 @@ ul {
 }
 
 .abstract-text {
-  margin-top: 6px;
+  margin-top: 8px;
   font-size: 0.95rem;
-  line-height: 1.5;
+  line-height: 1.55;
   color: #444;
 }

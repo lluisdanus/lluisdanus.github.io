@@ -15,8 +15,10 @@ layout: default
 <div class="pub-meta">
   {{ pub.authors | replace: "Danús, Lluís", "<span class='author'>Danús, Lluís</span>" }}  
   <br>
-  <em>{{ pub.journal }}</em> ({{ pub.year }}) -
-  Cited by: {{ site.data.citations[pub.id] }}
+  <em>{{ pub.journal }}</em> ({{ pub.year }})
+  <span class="citations">
+  – Cited by: {{ site.data.citations[pub.id] | default: 0 }}
+</span>
 </div>
 
 {% if pub.abstract %}
