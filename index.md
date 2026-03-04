@@ -8,7 +8,7 @@ title: Lluís Danús
 
   <!-- Profile Photo -->
   <div class="about-photo">
-    <img src="{{ '/assets/images/profile_picture.png' | relative_url }}" alt="Lluís Danús">
+    <img src="{{ '/assets/profile_picture.png' | relative_url }}" alt="Lluís Danús">
   </div>
 
   <!-- Bio and Social Links -->
