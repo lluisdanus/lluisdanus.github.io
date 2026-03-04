@@ -314,6 +314,7 @@ ul {
 /* Social links below photo */
 .about-photo .social-links {
   display: flex;
+  margin-top: 12px;
   gap: 10px;
   justify-content: center;
 }

@@ -1,20 +1,22 @@
-- id: talk_netsci_2026
-  title: "Talk at NetSci 2026"
-  date: "2026-03-02"
-  short_content: "Website goes live"
-  full_content: |
-    I am launching this website where I will be uploading (as much as I can) my latest research and other academic acitivty!
+
     
 - id: talk_netsci_2026
   title: "Talk at NetSci 2026"
   date: "2026-03-02"
-  short_content: "Our talk has been accepted at NetSci 2026"
+  short_content: "Our talk has been accepted at NetSci 2026."
   full_content: |
-    We will be presenting our most recent study "Structural Diversity and Network Versatility are Higher in  Informal Structures of Collaboration" at the Network Science Conference (NetSci) to be held in Boston.
+    We will be presenting our most recent Science of science study "Structural Diversity and Network Versatility are Higher in  Informal Structures of Collaboration" at the Network Science Conference (NetSci) to be held in Boston.
     
 - id: poster_netsci_2026
   title: "Poster at NetSci 2026"
   date: "2026-03-02"
-  short_content: "Our poster has been accepted at NetSci 2026"
+  short_content: "Our poster has been accepted at NetSci 2026."
   full_content: |
     We will be presenting our most recent study on online political organization "The Hidden Organization of Online Communities: Reddit through the Lens of Stochastic Block Models and Neural Embeddings" at the Network Science Conference (NetSci) to be held in Boston.
+    
+- id: website_live_2026
+  title: "Welcome to my website!"
+  date: "2026-03-02"
+  short_content: "Starting my new web page."
+  full_content: |
+    I am launching this website where I will be uploading (as much as I can) my latest research and other academic acitivty!
