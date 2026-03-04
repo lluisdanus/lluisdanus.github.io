@@ -460,3 +460,11 @@ ul {
     margin-bottom: 1.5rem;
   }
 }
+
+.pub-link-arrow {
+  font-size: 0.9em;
+  vertical-align: middle;
+  margin-left: 4px;
+  color: var(--accent); /* same blue as highlights */
+  transition: transform 0.2s;
+}

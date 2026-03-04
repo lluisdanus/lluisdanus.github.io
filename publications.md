@@ -9,7 +9,9 @@ layout: default
 <div class="publication">
 
 <div class="pub-title">
-  <a href="https://doi.org/{{ pub.doi }}">{{ pub.title }}</a>
+  <a href="https://doi.org/{{ pub.doi }}">
+  {{ pub.title }}<span class="pub-link-arrow">↗</span>
+  </a>
 </div>
 
 <div class="pub-meta">
