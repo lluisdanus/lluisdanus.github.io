@@ -50,7 +50,7 @@ title: Lluís Danús
 
 <!-- Mini Dashboard: News Teaser -->
 <div class="dashboard-section">
-  <h2>News</h2>
+  <h1>News</h1>
   {% for item in site.data.news limit:3 %}
     <div class="news-teaser">
       <a href="{{ '/news#' | append: item.id }}">{{ item.title }}</a>
