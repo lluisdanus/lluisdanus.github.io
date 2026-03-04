@@ -8,7 +8,7 @@ title: Lluís Danús
 
   <!-- Profile Photo -->
   <div class="about-photo">
-    <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Lluís Danús">
+    <img src="{{ '/assets/images/profile_picture.png' | relative_url }}" alt="Lluís Danús">
   </div>
 
   <!-- Bio and Social Links -->
@@ -34,19 +34,6 @@ title: Lluís Danús
       </a>
     </div>
   </div>
-</div>
-
-<!-- Mini Dashboard: Publications Teaser -->
-<div class="dashboard-section">
-  <h2>Publications</h2>
-  {% for pub in site.data.publications limit:3 %}
-    <div class="publication-teaser">
-      <a href="{{ '/publications' | relative_url }}#{{ pub.id }}">{{ pub.title }}</a>
-      <br>
-      <small>{{ pub.authors }}</small>
-    </div>
-  {% endfor %}
-  <a href="{{ '/publications' | relative_url }}" class="see-all">See all publications →</a>
 </div>
 
 <!-- Mini Dashboard: News Teaser -->
