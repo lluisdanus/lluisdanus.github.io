@@ -334,7 +334,6 @@ ul {
 /* Bio */
 .about-bio {
   flex: 1;
-  min-width: 250px;
 }
 
 .about-bio h1 {
