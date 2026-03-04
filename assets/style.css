@@ -296,11 +296,11 @@ ul {
   gap: 2rem;
 }
 
-
-
 .about-photo {
-  flex: 0 0 300px;     /* fixed width (adjust as needed) */
   display: flex;
+  flex-direction: column;   /* THIS is the key line */
+  align-items: center;
+  gap: 1rem;
 }
 
 .about-photo img {
