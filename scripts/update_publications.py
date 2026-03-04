@@ -4,14 +4,15 @@ import yaml
 from pathlib import Path
 import latexcodec
 import re 
-
+    
 def latex_to_unicode(s):
     if not s:
+        return ""
+    try:
+        return codecs.decode(s, 'ulatex+utf8')
+    except Exception:
+        # fallback: just return original string
         return s
-    s = s.encode("utf-8").decode("latex")
-    # remove leftover braces around single characters
-    s = re.sub(r"\{([^{}])\}", r"\1", s)
-    return s
 
 bibfile = Path("assets/publications.bib")
 out_pubs = Path("_data/publications.yml")
