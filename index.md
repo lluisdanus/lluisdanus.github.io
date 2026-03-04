@@ -28,7 +28,6 @@ title: Lluís Danús
 
   <!-- Bio and Social Links -->
   <div class="about-bio">
-    <h1>Lluís Danús</h1>
     <p>
       !Bones! I am a computational social scientist who combines statistical physics methods, social network analysis, and large language models (LLMs) to study how humans interact, organize, and circulate. My research spans three interconnected areas: the science of science, where I investigate formal and informal collaboration patterns shape how researchers engage with each other and the effects of its effects on the scientific production; online political organization, exploring how social media shapes collective behavior, information diffusion and how LLMs ; and human mobility, modeling how people move across cities and regions and how these flows influence social and economic dynamics. 
     </p>
