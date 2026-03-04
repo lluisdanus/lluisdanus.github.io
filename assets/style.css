@@ -538,3 +538,21 @@ ul {
     max-width: 100%;
   }
 }
+
+/* About section links */
+.about-bio a {
+  color: #1f4ed8;       /* accent blue */
+  text-decoration: none; /* remove underline */
+  transition: color 0.2s;
+}
+
+/* Hover effect (optional) */
+.about-bio a:hover {
+  color: #2563eb;
+}
+
+/* Prevent visited links from changing color */
+.about-bio a:visited {
+  color: #1f4ed8;       /* same as unvisited */
+  text-decoration: none; /* same as unvisited */
+}
