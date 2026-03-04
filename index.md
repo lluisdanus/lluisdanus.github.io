@@ -32,13 +32,17 @@ title: Lluís Danús
 
   <!-- Bio and Social Links -->
   <div class="about-bio">
-    <p>
-      !Bones! I am a computational social scientist who combines statistical physics methods, social network analysis, and large language models (LLMs) to study how humans interact, organize, and circulate. My research spans three interconnected areas: the science of science, where I investigate formal and informal collaboration patterns shape how researchers engage with each other and the effects of its effects on the scientific production; online political organization, exploring how social media shapes collective behavior, information diffusion and how LLMs ; and human mobility, modeling how people move across cities and regions and how these flows influence social and economic dynamics. 
-    </p>
-    
-    <p>
-    	I am currently a postdoctoral researcher at University of Pennsylvania's <a href='https://www.asc.upenn.edu/research/centers/center-for-information-networks-and-democracy'> Center for Information Networks and Democracy (CIND) </a> working with Dr. Sandra Gonzalez-Bailon. I received my Ph.D. in Complex Systems at the Rovira i Virgili University where I worked at the <a href='https://seeslab.info/' title="SEESLab">Systems and Emerging Systems Laboratory</a>. Previously I earned my BSc in Physics at the <a href='https://www.ub.edu/portal/web/fisica' title="University of Barcelona">University of Barcelona</a>
-    </p>
+<p>
+  !Bones! I am a computational social scientist who combines statistical physics methods, social network analysis, and large language models (LLMs) to study how humans interact, organize, and circulate. My research focuses on how these methods help us understand complex social systems: how collaborations between colleagues shape the growth of scientific domains, how online networks drive the formation and evolution of collective organization and the spread of information, and how simpler, statistically grounded approaches can sometimes better capture human behavior in urban environments.
+</p>
+
+<p>
+  More recently, I have been developing LLM-assisted pipelines to identify political framing in casual, non-partisan content, and to investigate how these models may influence the way we communicate and consume information.
+</p>
+
+<p>
+  I am currently a postdoctoral researcher at the University of Pennsylvania's <a href='https://www.asc.upenn.edu/research/centers/center-for-information-networks-and-democracy'>Center for Information Networks and Democracy (CIND)</a>, working with Dr. Sandra González-Bailón. I received my Ph.D. in Complex Systems at the Rovira i Virgili University, where I worked at the <a href='https://seeslab.info/' title="SEESLab">Systems and Emerging Systems Laboratory</a>. Previously, I earned my BSc in Physics at the <a href='https://www.ub.edu/portal/web/fisica' title="University of Barcelona">University of Barcelona</a>.
+</p>
 
   </div>
 </div>
