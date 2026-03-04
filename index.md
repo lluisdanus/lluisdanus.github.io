@@ -9,6 +9,10 @@ title: Lluís Danús
   <!-- Profile Photo -->
   <div class="about-photo">
     <img src="{{ '/assets/profile_picture.png' | relative_url }}" alt="Lluís Danús">
+    <p>
+    Computational Social Science
+    Network Science | Complex Systems
+    AI research
     <!-- Social Links -->
     <div class="social-links">
       <a href="https://github.com/lluisdanus" target="_blank" title="GitHub">
