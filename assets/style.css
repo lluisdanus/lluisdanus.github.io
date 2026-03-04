@@ -292,13 +292,15 @@ ul {
 /* About page container */
 .about-container {
   display: flex;
-  flex-direction:column;
-  gap: 2rem;
+  flex-direction: row;      /* side-by-side */
+  align-items: flex-start;  /* align top */
+  gap: 3rem;
 }
 
 .about-photo {
+  flex: 0 0 260px;          /* fixed width column */
   display: flex;
-  flex-direction: column;   /* THIS is the key line */
+  flex-direction: column;   /* stack image + icons */
   align-items: center;
   gap: 1rem;
 }
