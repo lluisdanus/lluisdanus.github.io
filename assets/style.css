@@ -377,3 +377,21 @@ ul {
 .see-all:hover {
   text-decoration: underline;
 }
+
+/* --- Responsive for mobile --- */
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;   /* stack photo + bio vertically */
+    align-items: center;      /* center everything horizontally */
+  }
+
+  .about-photo {
+    width: 50%;               /* optional: make photo smaller on mobile */
+    margin-bottom: 1.5rem;    /* space between photo+icons and bio */
+  }
+
+  .about-bio {
+    width: 100%;
+    text-align: center;       /* optional: center text on mobile */
+  }
+}
