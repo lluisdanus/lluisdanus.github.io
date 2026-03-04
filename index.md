@@ -63,43 +63,50 @@ title: Lluís Danús
 </div>
 
 {% assign today = 'now' | date: "%Y-%m-%d" %}
+{% assign upcoming = site.data.events | sort: 'date' %}
 
-<!-- News / Events Table -->
-<div class="events-dashboard">
-  <table>
-    <thead>
-      <tr>
-        <th>Date</th>
-        <th>Event / News</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% assign upcoming = site.data.events | sort: 'date' %}
-      {% for item in upcoming %}
-        {% assign item_date = item.date | date: "%Y-%m-%d" %}
-        {% if item_date >= today %}
-          <tr>
-            <td>
-              {{ item.date | date: "%b %d, %Y" }}
-              {% if item.location %}
-                <span class="location-icon">📍</span>
-              {% endif %}
-            </td>
-            <td>
-              <strong>
-                {% if item.url %}
-                  <a href="{{ item.url }}" target="_blank">{{ item.title }}</a>
-                {% else %}
-                  {{ item.title }}
-                {% endif %}
-              </strong>
-              {% if item.short_content %}
-                <p>{{ item.short_content }}</p>
-              {% endif %}
-            </td>
-          </tr>
-        {% endif %}
-      {% endfor %}
-    </tbody>
-  </table>
+<div class="events-section">
+  <h2>Upcoming Events</h2>
+
+  <div class="events-table">
+    {% for event in upcoming %}
+      {% assign event_date = event.date | date: "%Y-%m-%d" %}
+      {% if event_date >= today %}
+        <div class="event-row">
+          
+          <!-- Left column: Date -->
+          <div class="event-date">
+            {{ event.date | date: "%b %d, %Y" }}
+          </div>
+
+          <!-- Right column: Body -->
+          <div class="event-body">
+            
+            <!-- 1. Title -->
+            <div class="event-title">
+              <a href="{{ event.url }}" target="_blank">
+                {{ event.title }}
+              </a>
+            </div>
+
+            <!-- 2. Short description -->
+            {% if event.short %}
+              <div class="event-short">
+                {{ event.short }}
+              </div>
+            {% endif %}
+
+            <!-- 3. Location -->
+            {% if event.location %}
+              <div class="event-location">
+                📍 {{ event.location }}
+              </div>
+            {% endif %}
+
+          </div>
+
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
