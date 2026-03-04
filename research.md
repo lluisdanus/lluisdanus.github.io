@@ -30,6 +30,7 @@ Societies have historically relied on journalism, institutions, and social netwo
 I investigate how large language models participate in information production and consumption: how they influence framing, persuasion, and public discourse; how users adapt their communicative strategies in response to AI systems; and how these models may alter the balance between organic and synthetic information flows. 
 
 At the same time, I am interested in how AI systems can be designed and deployed to improve the quality of our information environments. Rather than viewing them solely as amplifiers of noise or polarization, we can explore their potential as mediators: tools that support human productivity, facilitate access to diverse perspectives, reduce exposure to manipulative framing, and foster more constructive forms of public deliberation. This line of work combines computational experimentation with network-level analysis to understand not only how AI transforms collective communication dynamics, but also how it can be aligned to strengthen them.
+
 ---
 
 # Urban Mobility
