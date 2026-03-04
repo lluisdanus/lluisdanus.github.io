@@ -48,19 +48,7 @@ title: Lluís Danús
   </div>
 </div>
 
-/**
-<!-- Mini Dashboard: News Teaser -->
-<div class="dashboard-section">
-  <h1>News</h1>
-  {% for item in site.data.news limit:3 %}
-    <div class="news-teaser">
-      <a href="{{ '/news#' | append: item.id }}">{{ item.title }}</a>
-      <p>{{ item.short_content }}</p>
-    </div>
-  {% endfor %}
-  <a href="{{ '/news' | relative_url }}" class="see-all">See all news →</a>
-</div>
-**/
+<h2> News </h2>
 
 <div class="about-news-dashboard">
   {% for item in site.data.news limit:3 %}
