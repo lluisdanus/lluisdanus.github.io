@@ -27,12 +27,15 @@ My research examines how network structure and information dynamics interact to 
 
 Societies have historically relied on journalism, institutions, and social networks to mediate access to information. The rapid integration of generative AI systems into communication platforms is reshaping this ecosystem in profound ways.
 
-I investigate how large language models participate in information production and consumption: how they influence framing, persuasion, and public discourse; how users adapt their communicative strategies in response to AI systems; and how these models may alter the balance between organic and synthetic information flows. This line of work combines computational experimentation with network-level analysis to understand how AI systems integrate into — and potentially transform — collective communication dynamics.
+I investigate how large language models participate in information production and consumption: how they influence framing, persuasion, and public discourse; how users adapt their communicative strategies in response to AI systems; and how these models may alter the balance between organic and synthetic information flows. 
 
+At the same time, I am interested in how AI systems can be designed and deployed to improve the quality of our information environments. Rather than viewing them solely as amplifiers of noise or polarization, we can explore their potential as mediators: tools that support human productivity, facilitate access to diverse perspectives, reduce exposure to manipulative framing, and foster more constructive forms of public deliberation. This line of work combines computational experimentation with network-level analysis to understand not only how AI transforms collective communication dynamics, but also how it can be aligned to strengthen them.
 ---
 
 # Urban Mobility
 
 Cities represent one of the most complex forms of human organization. From small villages to global metropolises, urban spaces concentrate economic exchange, social interaction, and cultural production. Patterns of mobility within cities reveal how people navigate opportunities, constraints, and inequalities embedded in physical space.
 
-In this area, I develop statistically grounded models to study human mobility patterns and urban dynamics. By combining mobility data with network-based approaches, I explore how movement flows shape social connectivity, economic activity, and the diffusion of behaviors across neighborhoods. Often, simple and interpretable models can capture essential features of urban behavior, offering insight into how cities function as dynamic social systems.
+Urban growth and spatial organization are not random processes. They reflect historical investment patterns, institutional decisions, and persistent structural inequalities that shape who has access to which neighborhoods, resources, and social networks. These spatial structures influence how individuals move through the city, the communities they can connect with, and ultimately their life outcomes.
+
+In this area, I develop statistically grounded models to study human mobility and urban dynamics. By combining mobility data with network-based approaches, I explore how movement flows shape social connectivity, economic activity, and the diffusion of behaviors across neighborhoods. Often, simple and interpretable models can capture essential features of urban systems, helping us understand how structural constraints and individual choices interact to produce large-scale patterns.
