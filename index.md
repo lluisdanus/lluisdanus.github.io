@@ -62,27 +62,44 @@ title: Lluís Danús
   {% endfor %}
 </div>
 
-<!-- Upcoming Events Section -->
-<div class="events-section">
-  <h2>Upcoming Events</h2>
-  <div class="events-table">
-    {% assign today = 'now' | date: "%Y-%m-%d" %}
-    {% assign upcoming = site.data.events | sort: 'date' | reverse %}
-    {% for event in upcoming %}
-      {% if event.date >= today %}
-        <div class="event-row">
-          <div class="event-date">{{ event.date | date: "%b %d, %Y" }}</div>
-          <div class="event-desc">
-            <a href="{{ event.url }}" target="_blank">{{ event.title }}</a>
-            {% if event.location %}
-              <span class="event-location">📍 {{ event.location }}</span>
-            {% endif %}
-            {% if event.short %}
-              <div class="event-short">{{ event.short }}</div>
-            {% endif %}
-          </div>
-        </div>
-      {% endif %}
-    {% endfor %}
-  </div>
+{% assign today = 'now' | date: "%Y-%m-%d" %}
+
+<!-- News / Events Table -->
+<div class="events-dashboard">
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Event / News</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% assign upcoming = site.data.events | sort: 'date' %}
+      {% for item in upcoming %}
+        {% assign item_date = item.date | date: "%Y-%m-%d" %}
+        {% if item_date >= today %}
+          <tr>
+            <td>
+              {{ item.date | date: "%b %d, %Y" }}
+              {% if item.location %}
+                <span class="location-icon">📍</span>
+              {% endif %}
+            </td>
+            <td>
+              <strong>
+                {% if item.url %}
+                  <a href="{{ item.url | relative_url }}" target="_blank">{{ item.title }}</a>
+                {% else %}
+                  {{ item.title }}
+                {% endif %}
+              </strong>
+              {% if item.short_content %}
+                <p>{{ item.short_content }}</p>
+              {% endif %}
+            </td>
+          </tr>
+        {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
