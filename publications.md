@@ -16,12 +16,7 @@ layout: default
   {{ pub.authors | replace: "Danús, Lluís", "<span class='author'>Danús, Lluís</span>" }}  
   <br>
   <em>{{ pub.journal }}</em> ({{ pub.year }}) -
-<br>
-ID raw: "{{ pub.id }}"
-<br>
-Lookup value: "{{ site.data.citations[pub.id] }}"
-<br>
-All citation keys: {{ site.data.citations | jsonify }}
+  Cited by: {{ site.data.citations[pub.id] }}
 </div>
 
 </div>
