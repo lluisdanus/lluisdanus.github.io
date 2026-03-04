@@ -16,8 +16,12 @@ I am a postdoctoral researcher in Computational Social Science at the Center for
 
 ---
 
-## News
+## News Highlights
 
-{% for post in site.posts limit:5 %}
-- **{{ post.date | date: "%b %Y" }}** — {{ post.title }}
+{% for item in site.data.news limit:5 %}
+<div class="news-teaser">
+  <h3>{{ item.title }}</h3>
+  <p>{{ item.short_content }}</p>
+  <a href="{{ '/news#' | append: item.id }}">Read more</a>
+</div>
 {% endfor %}
