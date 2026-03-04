@@ -48,6 +48,7 @@ title: Lluís Danús
   </div>
 </div>
 
+/**
 <!-- Mini Dashboard: News Teaser -->
 <div class="dashboard-section">
   <h1>News</h1>
@@ -58,4 +59,17 @@ title: Lluís Danús
     </div>
   {% endfor %}
   <a href="{{ '/news' | relative_url }}" class="see-all">See all news →</a>
+</div>
+**/
+
+<div class="about-news-dashboard">
+  {% for item in site.data.news limit:3 %}
+    <a href="{{ '/news#' | append: item.id }}" class="news-card">
+      <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
+      <div class="news-caption">
+        <strong>{{ item.title }}</strong>
+        <p>{{ item.short_content }}</p>
+      </div>
+    </a>
+  {% endfor %}
 </div>

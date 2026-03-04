@@ -429,12 +429,10 @@ ul {
   margin-bottom: 20px;
 }
 
-/*
 .research-text h2 {
   color: var(--accent-blue);  /* same blue as your name */
   margin-bottom: 1rem;
 } 
- */
 
 .research-image {
   flex: 1;
