@@ -66,14 +66,23 @@ title: Lluís Danús
 <div class="events-section">
   <h2>Upcoming Events</h2>
   <div class="events-table">
-    {% for event in site.data.events %}
-      <div class="event-row">
-        <div class="event-date">{{ event.date | date: "%b %d, %Y" }}</div>
-        <div class="event-desc">
-          <a href="{{ event.url }}" target="_blank">{{ event.title }}</a>
-          {% if event.location %} — {{ event.location }}{% endif %}
+    {% assign today = 'now' | date: "%Y-%m-%d" %}
+    {% assign upcoming = site.data.events | sort: 'date' | reverse %}
+    {% for event in upcoming %}
+      {% if event.date >= today %}
+        <div class="event-row">
+          <div class="event-date">{{ event.date | date: "%b %d, %Y" }}</div>
+          <div class="event-desc">
+            <a href="{{ event.url }}" target="_blank">{{ event.title }}</a>
+            {% if event.location %}
+              <span class="event-location">📍 {{ event.location }}</span>
+            {% endif %}
+            {% if event.short %}
+              <div class="event-short">{{ event.short }}</div>
+            {% endif %}
+          </div>
         </div>
-      </div>
+      {% endif %}
     {% endfor %}
   </div>
 </div>
