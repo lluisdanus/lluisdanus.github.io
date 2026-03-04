@@ -35,16 +35,16 @@ layout: default
 <div class="abstract-block">
   <details>
     <summary>Show citation</summary>
-    <pre class="bibtex-text">
-@article{ {{ pub.id }},
-  author={{ "{{ pub.authors }}" }},
-  title={{ "{{ pub.title }}" }},
-  journal={{ "{{ pub.journal }}" }},
-  year={{ "{{ pub.year }}" }},
-  doi={{ "{{ pub.doi }}" }}
+<pre class="bibtex-text">
+@article{ {{ pub.id }} ,
+  author={{ pub.authors }},
+  title={{ pub.title }},
+  journal={{ pub.journal }},
+  year={{ pub.year }},
+  doi={{ pub.doi }}
 }
-    </pre>
-    <a href="/path/to/{{ pub.id }}.bib" download>Download BibTeX</a>
+</pre>
+    <a href="/assets/publications/{{ pub.id }}.bib" download>Download BibTeX</a>
   </details>
 </div>
 
