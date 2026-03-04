@@ -292,21 +292,20 @@ ul {
 /* About page container */
 .about-container {
   display: flex;
-  flex-direction: row;      /* side-by-side */
-  align-items: flex-start;  /* align top */
+  flex-direction: row;
+  align-items: stretch;
   gap: 3rem;
 }
 
 .about-photo {
-  flex: 0 0 260px;          /* fixed width column */
+  flex: 0 0 260px;
   display: flex;
-  flex-direction: column;   /* stack image + icons */
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .about-photo img {
-  width: 250px;
+  width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 20px;
@@ -314,7 +313,6 @@ ul {
 
 /* Social links below photo */
 .about-photo .social-links {
-  margin-top: 12px;
   display: flex;
   gap: 10px;
   justify-content: center;
