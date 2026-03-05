@@ -609,3 +609,10 @@ ul {
     grid-template-columns: 1fr;
   }
 }
+
+.event-location img {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+}

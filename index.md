@@ -65,8 +65,9 @@ title: Lluís Danús
 {% assign today = 'now' | date: "%Y-%m-%d" %}
 {% assign upcoming = site.data.events | sort: 'date' %}
 
+<h2>Upcoming Events</h2>
+
 <div class="events-section">
-  <h2>Upcoming Events</h2>
 
   <div class="events-table">
     {% for event in upcoming %}
