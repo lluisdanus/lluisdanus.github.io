@@ -2,10 +2,22 @@
   title: "CIND Workshop 2026"
   url: "https://www.asc.upenn.edu/research/centers/center-for-information-networks-and-democracy/events"
   location: "Annenberg School for Communication, Philadelphia, PA"
-  short_content: The anual workshop of the Center for Information Networks and Democracy
+  short: The anual workshop of the Center for Information Networks and Democracy
 
 - date: 2026-03-04
-  title: "Ciencia con Acento"
+  title: "Ciencia con Acento social"
   url: "https://www.linkedin.com/posts/ciencia-con-acento_cienciaconacento-stemcommunity-latinosinstem-activity-7432076864808042496-PV6P?utm_source=share&utm_medium=member_desktop&rcm=ACoAABkn16EBQ2Eup0KDXVUesow-eRHGIG7hjkc"
-  location: "Philadelphia, PA"
-  short_content: "Monthly meeting of the spanish-speaking STEM community in Philadelphia"
+  location: "City Tap Brewery, Philadelphia, PA"
+  short: "Monthly social of the spanish-speaking STEM community in Philadelphia"
+  
+- date: 2026-06-01
+  title: "Netsci 2026"
+  url: "https://www.netsci2026.com/"
+  location: "Boston, MA"
+  short: "I'm giving an oral and a poster presentation. Come to say hi!"
+  
+- date: 2026-07-28
+  title: "12th IC2S2"
+  url: "https://ic2s2-2026.org/"
+  location: "Burlington, VT"
+  short: "Assisting to the International Conference on Computational Social Science"

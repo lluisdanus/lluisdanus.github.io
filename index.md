@@ -99,7 +99,8 @@ title: Lluís Danús
             <!-- 3. Location -->
             {% if event.location %}
               <div class="event-location">
-                📍 {{ event.location }}
+              <img src="{{ '/assets/icons/location.svg' | relative_url }}" alt="Location" class="social-icon">
+                {{ event.location }}
               </div>
             {% endif %}
 
