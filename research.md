@@ -46,7 +46,7 @@ As a Computational Social Scientist trained in physics, I apply mathematical and
 </div>
 
 
-<!-- Human–AI Interaction and the Emerging Information Ecosystem -->
+<!-- Human–AI Interaction and the Emerging Information Ecosystem 
 <div class="research-section reverse">
 
   <div class="research-text">
@@ -62,7 +62,7 @@ As a Computational Social Scientist trained in physics, I apply mathematical and
     <img src="/assets/images/science_network.png" alt="Scientific collaboration network">
   </div>
   
-</div>
+</div> -->
 
 <!-- Urban Mobility -->
 <div class="research-section">
