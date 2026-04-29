@@ -1,4 +1,18 @@
+- id: new_paper_informal
+  title: "Talk at NetSci 2026"
+  date: "2026-03-02"
+  short_content: "New paper accepted at PNAS."
+  full_content: |
+    New paper out 🎉
 
+We often think of collaboration in science through coauthorship, but that is only part of the story. What about the many informal interactions that shape research behind the scenes?
+
+Science is deeply social, and much of that invisible labour happens in hallway conversations, feedback sessions, and shared ideas that never make it onto the author line. To make this visible, we analyzed the acknowledgment sections of ~130k papers over 20 years to capture these hidden collaborations.
+
+The takeaway? Informal collaborations are a strong predictor of academic impact, even more than coauthorship. The conversations in the margins of science count.
+
+So connect with your colleagues and acknowledge them (partly for science, partly so our dataset grows 😄).
+  image: "/assets/news/new_paper_informal.png"
     
 - id: talk_netsci_2026
   title: "Talk at NetSci 2026"
